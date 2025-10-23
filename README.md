@@ -71,8 +71,17 @@ streamlit run main.py
 ### 📌 **Deploying on Streamlit Cloud**  
 1. Push your repo to GitHub.  
 2. Ensure `setup.sh` is in the repo root.  
-3. Link your **GitHub repo** to **Streamlit Cloud** & specify `app.py` as the entry point.  
+3. Link your **GitHub repo** to **Streamlit Cloud** & specify `main.py` as the entry point.  
 4. Streamlit Cloud will handle the deployment automatically.  
+
+### 🚀 **Deploying on Vercel**
+1. Ensure your repository contains a `vercel.json` file in the root, configured for a Python runtime.
+2. Push your repo to GitHub.
+3. Go to [Vercel](https://vercel.com/) and sign up or log in.
+4. Click 'Add New...' -> 'Project' and import your GitHub repository.
+5. Vercel will detect the `vercel.json` file and attempt to deploy your application.
+6. Note: Due to Streamlit being a long-running server and Vercel's primary focus on serverless functions,
+   direct deployment of Streamlit apps on Vercel might require a custom Dockerfile or other advanced configurations for optimal performance and stability.
 
 ---
 
