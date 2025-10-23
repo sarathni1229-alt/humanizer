@@ -3,6 +3,4 @@ __pycache__/
 *.pyc
 .DS_Store
 streamlit_app.log
-vercel.json
-Dockerfile
 # Add any other files/directories you wish to ignore
